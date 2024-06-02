@@ -1,0 +1,229 @@
+
+:root {
+    --sidbar-widht: 240px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: black;
+    font-weight: 700;
+}
+
+.text-brand {
+    color: #F6B17A;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: grey;
+}
+
+img {
+    width: 100%;
+}
+
+.uiux {
+    color: #F6B17A;
+}
+
+.bg-base {
+    background-color: rgb(244, 241, 236);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 orange;
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #F6B17A;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: black;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #5C5470;
+}
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar .nav-link.active {
+    color: #F6B17A;
+}
+
+.navbar .nav-link:hover {
+    color: #F6B17A;
+}
+
+a .instagram {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+a .github {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+a .whatsapp {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ab840;
+    border-radius: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+a .twiter {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 60px;
+    background-color: #0e76a8;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-widht);
+        background: linear-gradient(rgba(53, 47, 68, 0.918), rgba(53, 47, 68, 0.918)), url(../img/1198137.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid #F6B17A;
+    }
+
+    /* content wrapper */
+    #content-wrapper {
+        padding-left: var(--sidbar-widht);
+    }
+}
+
+/* btn */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    color: white;
+    background-color: #435585;
+    border-color: #818FB4;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color:white;
+    color: black;
+    border-color: #435585;
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #F6B17A;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+.card-custom .card-custom-img {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-img img{
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-img img {
+    transform: scale(1.1);
+}
+
+img .img-fluid .rounded-start {
+    height: 50px;
+    width: 50px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 100px;
+    font-size: 24px;
+    color: white;
+}
